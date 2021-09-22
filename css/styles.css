@@ -1,0 +1,315 @@
+/*................................................
+    BASIC STYLING FOR COMMON HTML ELEMENTS
+.................................................*/
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+   
+}
+/*................................................
+    COMMON CSS CLASS
+.................................................*/
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: row;  
+}
+.space {
+    padding-top: 30px;
+}
+
+/*................................................
+    HEADER
+.................................................*/
+
+.header{
+    justify-content: space-between;
+}
+
+header, .banner{
+    background-image: url(../images/companylogo/Affordable-Web-Design-Canada.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.logo{
+    font-family: cursive;
+    font-weight: bolder;
+    color: #f7eeee;
+    font-size: 25px;
+}
+
+.logos{
+    display: block;
+    color: rgb(155, 151, 151);
+}
+
+.menu ul{
+    display: inline-flex;
+}
+
+.menu ul li a {
+    padding: 10px;
+    color: #f7eeee;
+    font-family: sans-serif;
+}
+.menu ul li:not(:last-child){
+    border-right: 1px solid #f1f1f1;
+}
+
+/*................................................
+    SECTIONS
+.................................................*/
+
+.banner {
+    padding: 150px;
+}
+.section_a {
+    text-align: center;
+}
+
+.section_a h1 {
+    font-size: 60px;
+    color: #ddcfcf;
+    font-family: sans-serif;
+}
+
+.section_a h2 {
+    font-size: 40px;
+    color: #d8be66;
+    font-family: sans-serif;
+}
+
+.section_a h6 {
+    font-size: 22px;
+    font-family: cursive;
+    color: #d8d8d8;
+}
+.section_a p {
+    font-size: 25px;
+    font-family: sans-serif;
+    color: #f7eeee;
+    padding-bottom: 40px;
+}
+
+.section_a a {
+    padding: 20px;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+.register_b {
+    display: inline-block;
+    border: 1px solid white ;
+    border-radius: 10px;
+    padding-top: 10px;
+    background-color: rgb(53, 62, 97);
+    color: #d8be66;
+}
+
+
+
+.section_b {
+    text-align: center;
+    padding-top: 150px;
+    background-color: rgb(202, 223, 245);
+}
+.section_b h2{
+    font-size: 40px;
+    font-family: sans-serif;
+    padding-bottom: 20px;
+}
+.section_b p {
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+
+.section_c{
+    text-align: center;
+    padding: 150px 20px;
+    background-color: rgb(202, 223, 245);
+}
+
+.section_c h2 {
+    font-size: 40px;
+    font-family: sans-serif;
+    padding-bottom: 20px;
+}
+
+.section_c h5 {
+    font-size: 18px;
+    font-family: sans-serif;
+    padding-bottom: 5px;
+}
+
+.section_c p {
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+
+.section_d {
+    text-align: center;
+    padding: 100px 20px; 
+}
+
+.section_d h2 {
+    font-size: 40px;
+    font-family: sans-serif;
+    padding-bottom: 20px;
+}
+
+.section_d h6 {
+    font-family: sans-serif;
+    font-size: 11px;
+}
+
+.section_d p {
+    font-family: sans-serif;
+}
+
+img {
+    width: 150px;
+    height: auto;
+}
+
+.section_d .company {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.company li {
+    flex: 0 0 20%;
+}
+
+.images {
+    text-align: left;
+}
+
+.logo_description{
+    font-weight: normal;
+}
+
+.criteria {
+    display: flex;
+    flex-direction: row;
+}
+
+.eligibility {
+    text-align: left;
+    margin:0 auto;
+    justify-content: center;
+}
+
+
+.section_e{
+    text-align: left;
+    padding: 150px 20px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 20px;
+    background-color:  rgb(202, 223, 245) ;
+}
+
+.instructions ol li {
+    list-style-type: decimal;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.about_interview h5{
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.round {
+    font-weight: normal;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.instructions h2, .about_interview h2 {
+    padding-bottom: 25px;
+    font-size: 40px;
+    padding-bottom: 70px;
+    font-family: sans-serif;
+}
+
+
+.section_f {
+    padding: 100px 20px;
+    background-color:  rgb(202, 223, 245) ;
+}
+
+.section_f h2 {
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 40px;
+    font-family: sans-serif;
+}
+
+.section_f ol li {
+    list-style-type: decimal;
+}
+
+.section_f h5 {
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.section_f p {
+    width: 75%;
+    font-size: 14px;
+    font-family: sans-serif;
+    padding: 10px;
+}
+
+/*................................................
+    FOOTER
+.................................................*/
+
+footer {
+    background-color: rgb(105, 128, 145);
+}
+
+.footer {
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.footer ul li a {
+    color: #f1f1f1;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.footer ul li {
+    line-height: 25px;
+}
+
+.section_register {
+    text-align: center;
+    padding: 100px;
+}
+
+.register_c {
+    border: 2px solid rgb(11, 50, 206);
+    padding: 20px;
+    background-color: rgb(11, 50, 206);
+    color: #f1f1f1;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-weight: bolder;
+}

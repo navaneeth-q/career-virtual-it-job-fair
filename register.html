@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/register.css">
+    </head>
+<body>
+    <header>
+        <div class="flex-box container space header">
+            <a href=""class="logo">CAREER<span class=logos>Virtual IT Job Fair</span></a>
+        </div>
+    </header>
+    <section id="register">
+        <form action="submitAlert()" id="registration-form">
+            <div class="personal-info">
+                <div class="form-field name">
+                    <img src="images/icons/name.png" alt="name">
+                    <input type="text" placeholder="First Name" class="text-box first-name" name="first-name" maxlength="30" required>
+                    <input type="text" placeholder="Last Name" class="text-box last-name" name="last-name" maxlength="30" required>
+                </div>
+                <div class="form-field">
+                    <img src="images/icons/gender.png" alt="gender">
+                    <select name="gender" class="text-box gender" name="gender" required>
+                        <option value="null">Select your gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <img src="images/icons/mail.png" alt="mail">
+                    <input type="mail" placeholder="Enter your email" class="text-box email" name="email" required>
+                </div>
+                <div class="form-field">
+                    <img src="images/icons/phone.png" alt="phone">
+                    <input type="tel" placeholder="Enter your phone number" class="text-box phone-number" name="phone-number" max="12" required>
+                </div>
+                <div class="form-field">
+                    <img src="images/icons/address.png" alt="address">
+                    <input type="text" placeholder="Enter your address" class="text-box address" name="address" required>
+                </div>
+                <div class="form-field">
+                    <img src="images/icons/address.png" alt="address">
+                    <input type="text" placeholder="Address line 2" class="text-box address 2" name="address-2">
+                </div>
+                <div class="form-field">
+                    <img src="images/icons/address.png" alt="address">
+                    <input type="text" placeholder="Address line 3" class="text-box address 3" name="address-3">
+                </div>
+                <div class="form-field">
+                    <img src="images/icons/likes.png" alt="likes">
+                    <input type="text" placeholder="What are your likes?" class="text-box likes" name="likes" maxlength="60">
+                </div>
+                <div class="form-field">
+                    <img src="images/icons/dream.png" alt="dream">
+                    <input type="text" placeholder="What is your dream?" class="text-box dream" name="dream" maxlength="180">
+                </div>
+            </div>
+            <div class="technical-info">
+                <div class="form-field">
+                    <img src="images/icons/education.png" alt="education">
+                    <input type="text" placeholder="Educational Qualification" class="text-box educational-qualification" name="educational-qualification" maxlength="150" required>
+                </div>
+                <div class="form-field">
+                    <img src="images/icons/experience.png" alt="experience">
+                    <select name="experience" class="text-box experience" name="experience" required>
+                        <option value="null">Select your experience level</option>
+                        <option value="less than a year">less than a year</option>
+                        <option value="1+ year">1+ year</option>
+                        <option value="2+ years">2+ years</option>
+                        <option value="3+ years">3+ years</option>
+                        <option value="4+ years">4+ years</option>
+                        <option value="5+ years">5+ years</option>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <img src="images/icons/skills.png" alt="skills">
+                    <input type="text" placeholder="List your skills" class="text-box skills" name="skills" max="180" required>
+                </div>
+            </div>
+            <div class="form-field about">
+                <img src="images/icons/self.png" alt="self">
+                <input type="text" placeholder="Say something about yourself" class="text-box self-intro" name="self-intro" maxlength="180" required>
+            </div>
+            <div class="extras">
+                <div class="form-field">
+                    <img src="images/icons/company.png" alt="company">
+                    <input type="text" placeholder="Name your company, if you ever start one." class="text-box app-company" name="app-company" maxlength="50">
+                </div>
+                <div class="form-field">
+                    <img src="images/icons/companyinfo.png" alt="companyinfo">
+                    <input type="text" placeholder="Describe your company" class="text-box app-company-description" name="app-company-description" maxlength="150">
+                </div>
+            </div>
+            <div class="consents">
+                <div class="form-field">
+                    <input type="checkbox" id="terms" value="true"  required><label for="terms">I agree to the <a href="">terms of service</a> & <a href="">privacy policy</a>.</label>
+                </div>
+                <div class="form-field">
+                    <input type="checkbox" id="email-updates" value="true" checked required><label for="email-updates">I agree to receive email updates regarding the job fair.</label>
+                </div>
+                </div>
+            <div class="buttons">
+                <input type="button" value="cancel" class="button cancel" onclick="location.href = 'index.html';">
+                <input type="submit" value="submit" class="button submit">
+            </div>
+        </form>
+    </section>
+    <footer>
+        <div class="flex-box container space footer">
+            <div>
+                <a href=""class="logo">CAREER<span class=logos>Virtual IT Job Fair</span></a>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="">Terms & Conditions</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Twitter</a></li>
+                    <li><a href="">Linkedin</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+<script type="text/javascript">
+    function submitAlert(){
+        var formData = document.getElementById("registration-form").elements;
+        alert(
+            "Form Details:" +
+            "\n   First Name: " + formData.namedItem("first-name").value + "   Last Name: " + formData.namedItem("last-name").value +
+            "\n   Gender: " + formData.namedItem("gender").value +
+            "\n   Email: " + formData.namedItem("email").value +
+            "\n   Phone number: " + formData.namedItem("phone-number").value +
+            "\n   Address: " + formData.namedItem("address").value + formData.namedItem("address-2").value + formData.namedItem("address-3").value +
+            "\n   Likes: " + formData.namedItem("likes").value +
+            "\n   Dream: " + formData.namedItem("dream").value +
+            "\n   Educational Qualification: " + formData.namedItem("educational-qualification").value +
+            "\n   Experience: " + formData.namedItem("experience").value +
+            "\n   Skills: " + formData.namedItem("skills").value + 
+            "\n   Self Intro: " + formData.namedItem("self-intro").value +
+            "\n   Applicant Company: " + formData.namedItem("app-company").value +
+            "\n   Applicant Company Description" + formData.namedItem("app-company-description").value
+        );
+    }
+</script>
+</html>
